@@ -1,0 +1,132 @@
+* { /* Margin y padding 0 a todo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header: Barra de navegación y sus componentes */
+
+nav {
+  background-color: #333;
+  display: flex;
+}
+#html5 { /* Selector de ID de la imagen de html5 */
+  align-self: center;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+}
+nav a { /* Enlaces dentro del nav */
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 17px;
+}
+nav a:hover { /* Pasar el ratón sobre enlaces dentro del nav */
+  color: #333;
+  background-color: #f2f2f2;
+}
+nav a.active { /* Clase active para la página en la que estás actualmente */
+  color: #333;
+  background-color: #f2f2f2;
+}
+header > h1 { /* h1 hijo directo del header */
+  position: absolute;
+  right: 10px;
+  color: #f2f2f2;
+}
+
+/* Main Inicio */
+
+#webinfo { /* Banner con el logo de Node y dos encabezados */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 50px 0px; 
+  background-image: url(media/node.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 220px;
+  border-bottom: 1px solid #333;
+}
+section#articulos article { /* Articulos dentro del section con ID articulos */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+section#articulos article > * { /* Todos los elementos dentro de los articulos */
+  margin: 10px;
+  text-align: justify;
+  width: 50%;
+}
+
+/* Aside Inicio */
+
+aside {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: center;
+}
+aside a { /* Enlaces dentro del aside */
+  display: flex;
+  flex-direction: row; /* Solo hay uno, pero si hubiera más los quiero en fila */
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+}
+aside a:hover { /* Enlaces dentro del nav */
+  color: #666;
+}
+a[href="https://www.cifpfbmoll.eu/"]::before { /* Enlace al centro */
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-image: url(media/fbmoll.png);
+  background-size: cover;
+}
+
+/* Footer */
+
+footer {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background-color: #f2f2f2;
+}
+
+/* Contenido de las otras páginas */
+
+section#media article { /* Articulos dentro del section con ID articulos */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  align-items: center;
+}
+section#media article > * { /* Todos los elementos dentro de los articulos */
+  margin: 10px;
+  text-align: justify;
+  width: 50%;
+}
+
+table, th, td { /* Tabla y celdas */
+  border: 1px solid #333;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 2px;
+}
+th { /* Encabezados de tabla */
+  background-color: #666;
+  color: #f2f2f2;
+}
+tr:nth-child(odd) { /* Filas impares de tabla */
+  background-color: #f2f2f2;
+}

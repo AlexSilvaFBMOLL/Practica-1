@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 1</title>
+  <link rel="stylesheet" href="estils.css"/>
+</head>
+<body>
+  <!--Header de la página con el título y la barra de navegación-->
+  <header>
+    <h1>Videos</h1>
+    <nav>
+      <img id="html5" src="media/imagen.png">
+      <a href="inici.html">Inicio</a>
+      <a href="audios.html">Audios</a>
+      <a class="active" href="#">Videos</a>
+      <a href="taules.html">Tablas</a>
+    </nav>
+  </header>
+  <!--Main con dos videos-->
+  <main>
+    <section id="media">
+      <article>
+        <h2>Tierra</h2>
+        <!--Video con distintas fuentes-->
+        <video controls>
+          <source src="media/tierra.mp4">
+          <source src="media/tierra.webm">
+        </video>
+      </article>
+      <article>
+        <h2>Parque</h2>
+        <video src="media/parque.mp4" controls></video>
+      </article>
+    </section>
+  </main>
+  <!--Footer con datos de contacto-->
+  <footer>
+    <address>asilvaguerrero@cifpfbmoll.eu</address>
+  </footer>
+</body>
+</html>
